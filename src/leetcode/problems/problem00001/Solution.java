@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class Solution {
 
     public int[] twoSum(int[] nums, int target) {
