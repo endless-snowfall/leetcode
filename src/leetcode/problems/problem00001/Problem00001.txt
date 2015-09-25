@@ -9,7 +9,7 @@ Problem:
     Input: numbers={2, 7, 11, 15}, target=9
     Output: index1=1, index2=2
 
-Runtime:
+Runtime Analysis:
     Definitions:
         n is the size of the input array.
         
@@ -18,7 +18,8 @@ Runtime:
         O(n) to process array from both ends, terminating when either reaching target or left == right.
         
     Overall:
-        O(n)
+        Space O(n)
+        Runtime O(n)
 
 Tags: Arrays, Sorting, Linear
 
