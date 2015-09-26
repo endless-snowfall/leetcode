@@ -28,13 +28,16 @@ Runtime Analysis:
             - There are no palindromes exceeding one character in length so we do O(n + n) = O(n).
             
         Worst Case:
-            - The entire string consists of the same character and is a palindrome.  
+            - The entire string consists of the same character and is a palindrome.  At each center
+                we would have to process until we reach one end of the string so it's
+                O(n^2) for the single char centered + O(n^2) for the pair char centered for a total
+                of O(n^2).
         
     Overall:
         Space: O(1) for current longest palindrome
         Time: O(2nmp)
 
-Tags: Strings, Tricky, Palindrome
+Tags: Strings, Tricky, Palindrome, Unfinished
 
 Notes:
     - Code currently times out on LeetCode
