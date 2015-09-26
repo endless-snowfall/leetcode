@@ -19,7 +19,7 @@ Runtime Analysis:
         
     Overall:
         Space O(n)
-        Runtime O(n)
+        Time O(n)
 
 Tags: Arrays, Sorting, Linear
 
