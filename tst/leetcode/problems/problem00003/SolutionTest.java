@@ -5,7 +5,9 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-public class SolutionTest {
+import leetcode.problems.common.TestBase;
+
+public class SolutionTest extends TestBase {
 
     private Solution solution;
 

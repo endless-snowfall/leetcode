@@ -24,11 +24,17 @@ Runtime Analysis:
         - O(m) for each average length of a palindrome we encounter
         - O(2nmp)
         
+        Best Case:
+            - There are no palindromes exceeding one character in length so we do O(n + n) = O(n).
+            
+        Worst Case:
+            - The entire string consists of the same character and is a palindrome.  
+        
     Overall:
         Space: O(1) for current longest palindrome
         Time: O(2nmp)
 
-Tags: Strings, Tricky
+Tags: Strings, Tricky, Palindrome
 
 Notes:
     - Code currently times out on LeetCode
