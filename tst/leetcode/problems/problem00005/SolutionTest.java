@@ -1,4 +1,4 @@
-package leetcode.problems.problem00004;
+package leetcode.problems.problem00005;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import leetcode.problems.common.TestBase;
+import leetcode.problems.problem00005.Solution;
 
 public class SolutionTest extends TestBase {
 
