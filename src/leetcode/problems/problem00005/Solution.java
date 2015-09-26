@@ -26,8 +26,8 @@ public class Solution {
             }
 
             rowAssignment[i] = (increasingDirection)
-                    ? previousRowAssignment + 1
-                    : previousRowAssignment - 1;
+                ? previousRowAssignment + 1
+                : previousRowAssignment - 1;
         }
 
         StringBuilder[] builders = new StringBuilder[numRows];
