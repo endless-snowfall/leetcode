@@ -13,7 +13,7 @@
 
 # Runtime Analysis:
 ## Definitions:
-    n is the size of the input array.
+  - n is the size of the input array.
     
 ## Breakdown:
   - Initial O(n) to populate the map for backtracking to result.

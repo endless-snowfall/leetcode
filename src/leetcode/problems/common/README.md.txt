@@ -1,13 +1,17 @@
 # Problem:
 
 # Clarifications:
-
+  - 
+  
 # Approach:
-
+  - 
+  
 # Runtime Analysis:
 ##Definitions:
-        
+  - 
+  
 ##Breakdown:
+  - 
         
 ##Overall:
   - Space:
@@ -16,3 +20,4 @@
 # Tags:
 
 # Notes:
+  - 
