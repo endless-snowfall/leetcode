@@ -20,8 +20,8 @@
   - O(n) to process array from both ends, terminating when either reaching target or left == right.
     
 ## Overall:
-  Space O(n)
-  Time O(n)
+  - Space O(n)
+  - Time O(n)
 
 # Tags: Arrays, Sorting, Linear
 

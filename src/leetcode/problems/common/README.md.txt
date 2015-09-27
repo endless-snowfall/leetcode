@@ -10,8 +10,8 @@
 ##Breakdown:
         
 ##Overall:
-  Space:
-  Time:
+  - Space:
+  - Time:
 
 # Tags:
 
