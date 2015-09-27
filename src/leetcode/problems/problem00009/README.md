@@ -24,8 +24,8 @@
   - O(1) comparison to see if we've build the same thing.
         
 ## Overall:
-    Space: O(n/2)
-    Time: O(n)
+  - Space: O(n/2)
+  - Time: O(n)
 
 # Approach (2):
   - Negative numbers are not palindromes.

@@ -32,8 +32,8 @@
   - O(n) to process maps for result.
     
 ## Overall:
-    Space: O(n + m)
-    Time: O(n)
+  - Space: O(n + m)
+  - Time: O(n)
 
 # Approach (2):
   - For each height, try to find the left-most and right-most indices that are "compatible".
@@ -42,14 +42,14 @@
     
 # Runtime Analysis (2):
 ## Definitions:
-    n is length of input array.
+  - n is length of input array.
     
 ## Breakdown:
   - O(n) to find left and right-most indices for each height 
     
 ## Overall:
-    Space: O(1)
-    Time: O(n^2)
+  - Space: O(1)
+  - Time: O(n^2)
 
 # Approach (3):
   - # Approach problem from opposite ends inwards.
@@ -62,11 +62,11 @@
 
 # Runtime Analysis (3):
 ## Definitions:
-    n is length of input array.
+  - n is length of input array.
 
 ## Overall:
-    Space: O(1)
-    Time: O(n)
+  - Space: O(1)
+  - Time: O(n)
 
 # Tags: Arrays, Tricky, Reworked, Bad Assumptions, Incorrect, Inward Prune, Linear
 
