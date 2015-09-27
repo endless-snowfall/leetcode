@@ -1,0 +1,41 @@
+Problem:
+    Container With Most Water
+    
+    Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai).
+    n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0).
+    Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+
+    Note: You may not slant the container.
+    
+Clarifications:
+    - How many heights to expect?
+    - Range of height values?
+    - Are negatives possible?
+
+Approach:
+    - Two maps to hold height -> index values.
+    - First to hold left-most indices, second to hold right-most indices.
+    - Update second map when encountering new y values.
+    - Consider pairs only.
+        
+Runtime Analysis:
+    Definitions:
+        x is length of input array.
+        n is number of distinct heights in input.
+        m is number of n that have at least a paired occurrence.
+        
+    Breakdown:
+        - O(n) space for first map.
+        - O(m) space for second map.
+        - O(1) for candidate result.
+        - O(x) to process input of x points.
+        - O(n) to process maps for result.
+        
+    Overall:
+        Space: O(n + m)
+        Time: O(n)
+
+Tags: Arrays, Tricky, Unfinished
+
+Notes:
+    - Solution currently times out
