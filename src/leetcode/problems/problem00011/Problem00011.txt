@@ -12,13 +12,13 @@ Clarifications:
     - Range of height values?
     - Are negatives possible?
 
-Approach:
+Approach (1):
     - Two maps to hold height -> index values.
     - First to hold left-most indices, second to hold right-most indices.
     - Update second map when encountering new y values.
     - Consider pairs only.
-        
-Runtime Analysis:
+
+Runtime Analysis (1):
     Definitions:
         x is length of input array.
         n is number of distinct heights in input.
@@ -35,7 +35,25 @@ Runtime Analysis:
         Space: O(n + m)
         Time: O(n)
 
-Tags: Arrays, Tricky, Unfinished
+Approach (2):
+    - For each height, try to find the left-most and right-most indices that are "compatible".
+    - Calculate that area and test against running result.
+    - Don't consider heights that are <= to the "minimum height seen" up to this point.
+        
+Runtime Analysis (2):
+    Definitions:
+        n is length of input array.
+        
+    Breakdown:
+        - O(n) to find left and right-most indices for each height 
+        
+    Overall:
+        Space: O(1)
+        Time: O(n^2)
+
+Tags: Arrays, Tricky, Reworked, Bad Assumptions
 
 Notes:
-    - Solution currently times out
+    - Solution(1) and Solution(2) time out
+    - There was a bad assumption that exact height pairs were necessary to make a container.
+        [1, 2] -> 1 is a test case that is valid.

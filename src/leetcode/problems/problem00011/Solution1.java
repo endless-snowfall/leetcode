@@ -3,7 +3,7 @@ package leetcode.problems.problem00011;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Solution {
+public class Solution1 {
 
     public int maxArea(int[] height) {
         if (height.length < 1) {

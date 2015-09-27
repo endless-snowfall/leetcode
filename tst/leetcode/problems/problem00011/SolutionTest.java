@@ -9,31 +9,43 @@ import leetcode.problems.common.TestBase;
 
 public class SolutionTest extends TestBase {
 
-    private Solution solution;
+    private Solution1 solution1;
+    private Solution2 solution2;
 
     @Before
     public void before() {
-        solution = new Solution();
+        solution1 = new Solution1();
+        solution2 = new Solution2();
     }
 
     @Test
     public void test1() {
-        assertEquals(12, solution.maxArea(new int[] { 1, 3, 5, 1, 5, 3 }));
+        assertEquals(12, solution1.maxArea(new int[] { 1, 3, 5, 1, 5, 3 }));
+        assertEquals(12, solution2.maxArea(new int[] { 1, 3, 5, 1, 5, 3 }));
     }
 
     @Test
     public void test2() {
-        assertEquals(0, solution.maxArea(new int[] {}));
+        assertEquals(0, solution1.maxArea(new int[] {}));
+        assertEquals(0, solution2.maxArea(new int[] {}));
     }
 
     @Test
     public void test3() {
-        assertEquals(0, solution.maxArea(new int[] { 1 }));
+        assertEquals(0, solution1.maxArea(new int[] { 1 }));
+        assertEquals(0, solution2.maxArea(new int[] { 1 }));
     }
 
     @Test
     public void test4() {
-        assertEquals(12, solution.maxArea(new int[] { 99, 1, 3, 5, 1, 5, 3 }));
+        assertEquals(12, solution1.maxArea(new int[] { 99, 1, 3, 5, 1, 5, 3 }));
+        assertEquals(6, solution2.maxArea(new int[] { 99, 1, 3, 5, 1, 5, 3 }));
+    }
+
+    @Test
+    public void test5() {
+        assertEquals(0, solution1.maxArea(new int[] { 1, 2 }));
+        assertEquals(1, solution2.maxArea(new int[] { 1, 2 }));
     }
 
     // @Test
