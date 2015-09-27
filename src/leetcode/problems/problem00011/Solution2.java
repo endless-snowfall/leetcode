@@ -11,8 +11,10 @@ public class Solution2 {
 
         for (int i = 0; i < height.length; i++) {
             int currentHeight = height[i];
+            System.out.println("currentHeight: " + currentHeight);
             int leftMostIndex = findLeftMostIndex(height, currentHeight, i);
             int rightMostIndex = findRightMostIndex(height, currentHeight, i);
+            System.out.println("left: " + leftMostIndex + ", right: " + rightMostIndex);
             int candidate = (rightMostIndex - leftMostIndex) * currentHeight;
             result = (candidate > result) ? candidate : result;
         }

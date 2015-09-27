@@ -51,9 +51,26 @@ Runtime Analysis (2):
         Space: O(1)
         Time: O(n^2)
 
-Tags: Arrays, Tricky, Reworked, Bad Assumptions
+Approach (3):
+    - Approach problem from opposite ends inwards.
+    - The largest container area is created using the minimum height between the left and right-most edges.
+    - Calculate that area and compare it to the running result.
+    - Since we are going to move ONE edge after each iteration, choose to move the smaller one.
+    - This is because:
+        (1) We would only get a smaller area if we kept the smaller height.
+        (2) Discarding the smaller height gives us a chance at a larger one.
+
+Runtime Analysis (3):
+    Definitions:
+        n is length of input array.
+
+    Overall:
+        Space: O(1)
+        Time: O(n)
+
+Tags: Arrays, Tricky, Reworked, Bad Assumptions, Incorrect, Inward Prune, Linear
 
 Notes:
-    - Solution(1) and Solution(2) time out
+    - Solution(1) and Solution(2) time out.
     - There was a bad assumption that exact height pairs were necessary to make a container.
         [1, 2] -> 1 is a test case that is valid.
