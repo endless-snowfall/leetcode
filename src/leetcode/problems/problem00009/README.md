@@ -14,16 +14,16 @@
   - MAX_INT is 2.150B, so it can only have 10 digits.
 
 # Runtime Analysis (1):
-  ## Definitions:
+## Definitions:
     n is the number of digits.
 
-  ## Breakdown:
+## Breakdown:
     - O(n) to count the number of digits
     - O(n/2) to process half the digits
     - O(n/2) space to hold half the digits
     - O(1) comparison to see if we've build the same thing.
         
-  ## Overall:
+## Overall:
     Space: O(n/2)
     Time: O(n)
 
@@ -35,29 +35,15 @@
   - If all digits match then it's a palindrome.
     
 # Runtime Analysis (2):
-  ## Definitions:
+## Definitions:
     n is the number of digits.
 
-  ## Breakdown:
+## Breakdown:
     - O(n) to count the number of digits
     - O(n/2) to process each pair of digits
         
-  ## Overall:
+## Overall:
     Space: O(1)
-    Time: O(n)
-        
-# Runtime Analysis (2):
-  ## Definitions:
-    n is the number of digits.
-
-  ## Breakdown:
-    - O(n) to count the number of digits
-    - O(n/2) to process half the digits
-    - O(n/2) space to hold half the digits
-    - O(1) comparison to see if we've build the same thing.
-        
-  ## Overall:
-    Space: O(n/2)
     Time: O(n)
 
 # Tags: Palindrome, Integers, Linear, Assumptions, Divide by Zero, Disappearing Zeroes, Tricky, Unfinished
