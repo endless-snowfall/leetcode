@@ -37,7 +37,7 @@ Runtime Analysis:
         Space: O(1) for current longest palindrome
         Time: O(2nmp)
 
-Tags: Strings, Tricky, Palindrome, Unfinished, Quadratic
+Tags: Strings, Tricky, Palindrome, Quadratic
 
 Notes:
-    - Code currently times out on LeetCode
+    - First attempt times out on LeetCode
