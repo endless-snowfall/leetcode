@@ -28,8 +28,6 @@ public class Solution1 {
             int rightDigit = x % 10;
             reverse *= 10;
             reverse += rightDigit;
-
-            // remove right-most digit from original
             x /= 10;
         }
 
