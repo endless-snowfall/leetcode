@@ -1,6 +1,6 @@
 package leetcode.problems.problem00005;
 
-public class Solution {
+public class Solution1 {
 
     public String longestPalindrome(String s) {
         String result = "";
@@ -14,7 +14,7 @@ public class Solution {
 
     private String getLongestSingleCharacterCenteredPalindrome(String s) {
         String result = String.valueOf(s.charAt(0));
-        return getLongestPalindrome(s, result, Solution::isPalindrome, 0, -1, 1, 1);
+        return getLongestPalindrome(s, result, Solution1::isPalindrome, 0, -1, 1, 1);
     }
 
     private String getLongestDoubleCharacterCenteredPalindrome(String s, String result) {
@@ -27,7 +27,7 @@ public class Solution {
             result = s.substring(pairCenter, pairCenter + 2);
         }
 
-        return getLongestPalindrome(s, result, Solution::isPairCenteredPalindrome, pairCenter, pairCenter - 1, pairCenter + 2, 2);
+        return getLongestPalindrome(s, result, Solution1::isPairCenteredPalindrome, pairCenter, pairCenter - 1, pairCenter + 2, 2);
     }
 
     private String getLongestPalindrome(
