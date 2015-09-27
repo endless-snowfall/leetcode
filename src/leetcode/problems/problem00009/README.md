@@ -15,13 +15,13 @@
 
 # Runtime Analysis (1):
 ## Definitions:
-    n is the number of digits.
+  - n is the number of digits.
 
 ## Breakdown:
-    - O(n) to count the number of digits
-    - O(n/2) to process half the digits
-    - O(n/2) space to hold half the digits
-    - O(1) comparison to see if we've build the same thing.
+  - O(n) to count the number of digits
+  - O(n/2) to process half the digits
+  - O(n/2) space to hold half the digits
+  - O(1) comparison to see if we've build the same thing.
         
 ## Overall:
     Space: O(n/2)
@@ -36,15 +36,15 @@
     
 # Runtime Analysis (2):
 ## Definitions:
-    n is the number of digits.
+  - n is the number of digits.
 
 ## Breakdown:
-    - O(n) to count the number of digits
-    - O(n/2) to process each pair of digits
+  - O(n) to count the number of digits
+  - O(n/2) to process each pair of digits
         
 ## Overall:
-    Space: O(1)
-    Time: O(n)
+  - Space: O(1)
+  - Time: O(n)
 
 # Tags: Palindrome, Integers, Linear, Assumptions, Divide by Zero, Disappearing Zeroes, Tricky, Unfinished
 
