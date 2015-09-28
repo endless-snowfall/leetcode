@@ -26,6 +26,6 @@
   - Space: O(max(m, n) + 1)
   - Time: O(max(m, n)
 
-# Tags: LinkedList, Linear
+# Tags: Linked List, Linear
 
 # Notes:
