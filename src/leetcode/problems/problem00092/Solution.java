@@ -17,20 +17,8 @@ public class Solution {
             return head;
         }
 
-        ListNode previousToM;
-        ListNode mNode;
-        ListNode nNode;
-
-        if (m == 1) {
-            previousToM = null;
-            mNode = head;
-            nNode = getNodeAheadBy(mNode, n - m);
-        } else {
-            previousToM = getNodeAheadBy(head, m - 2);
-            mNode = previousToM.next;
-            nNode = getNodeAheadBy(previousToM, n - m + 1);
-        }
-
+        ListNode mNode = getNodeAheadBy(head, m - 1);
+        ListNode nNode = getNodeAheadBy(mNode, n - m);
         ListNode afterN = nNode.next;
         ListNode reversedHead = reverseSublist(mNode, n - m);
 
@@ -40,6 +28,7 @@ public class Solution {
         if (m == 1) {
             return reversedHead;
         } else {
+            ListNode previousToM = getNodeAheadBy(head, m - 2);
             previousToM.next = reversedHead;
             return head;
         }
