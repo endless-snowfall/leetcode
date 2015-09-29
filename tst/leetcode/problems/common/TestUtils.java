@@ -1,6 +1,6 @@
 package leetcode.problems.common;
 
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

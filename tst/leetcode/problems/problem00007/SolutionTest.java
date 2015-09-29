@@ -1,12 +1,11 @@
 package leetcode.problems.problem00007;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import leetcode.problems.common.TestBase;
-import leetcode.problems.problem00007.Solution;
 
 public class SolutionTest extends TestBase {
 

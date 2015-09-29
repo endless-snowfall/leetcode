@@ -1,7 +1,6 @@
 package leetcode.problems.problem00203;
 
-import static leetcode.problems.common.TestUtils.assertListNodesEqual;
-import static leetcode.problems.common.TestUtils.createList;
+import static leetcode.problems.common.TestUtils.*;
 
 import org.junit.Before;
 import org.junit.Test;
