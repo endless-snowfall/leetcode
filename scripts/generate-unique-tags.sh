@@ -1,0 +1,1 @@
+grep -R Tags /Users/anthony/Documents/workspace/leetcode/ | grep -v -e \/bin\/ -e \.md\.txt | awk -FTags: '{print$2}' | tr , '\n' | sed -e 's/^[ \t]*//' | sort | uniq -c | grep -Ei --color '$|Tricky|Unfinished|Reworked|Incorrect|Bad Assumptions|NullPointerException'
