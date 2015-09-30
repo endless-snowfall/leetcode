@@ -31,12 +31,12 @@ public class TestUtils {
             return;
         } else if (list1 != null && list2 != null) {
             if (list1.val != list2.val) {
-                fail("Lists not Equal!");
+                fail("Lists not equal!");
             } else {
                 assertListNodesEqual(list1.next, list2.next);
             }
         } else {
-            fail("Lists not Equal!");
+            fail("Lists not equal!");
         }
     }
 
@@ -56,5 +56,11 @@ public class TestUtils {
 
     public boolean areTreesEquals(TreeNode tree1, TreeNode tree2) {
         return new Solution().isSameTree(tree1, tree2);
+    }
+
+    public void assertTreesEquals(TreeNode tree1, TreeNode tree2) {
+        if (!areTreesEquals(tree1, tree2)) {
+            fail("Trees not equal!");
+        }
     }
 }
