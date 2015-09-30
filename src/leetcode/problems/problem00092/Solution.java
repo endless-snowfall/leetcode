@@ -27,11 +27,11 @@ public class Solution {
 
         if (m == 1) {
             return reversedHead;
-        } else {
-            ListNode previousToM = getNodeAheadBy(head, m - 2);
-            previousToM.next = reversedHead;
-            return head;
         }
+
+        ListNode previousToM = getNodeAheadBy(head, m - 2);
+        previousToM.next = reversedHead;
+        return head;
     }
 
     private ListNode reverseSublist(ListNode start, int count) {
