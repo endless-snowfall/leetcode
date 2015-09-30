@@ -19,17 +19,21 @@ public class TreeNode {
 
     @Override
     public String toString() {
-        List<Integer> result = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(this);
 
         while (!queue.isEmpty()) {
             TreeNode current = queue.remove();
-            result.add(current.val);
-            queue.add(current.left);
-            queue.add(current.right);
+            if (current == null) {
+                result.add("null");
+            } else {
+                result.add(current.val.toString());
+                queue.add(current.left);
+                queue.add(current.right);
+            }
         }
 
-        return Joiner.on(',').useForNull("null").join(result);
+        return Joiner.on(',').join(result);
     }
 }
