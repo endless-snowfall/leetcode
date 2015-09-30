@@ -2,6 +2,7 @@ package leetcode.problems.common;
 
 import static org.junit.Assert.*;
 
+import leetcode.problems.problem00100.Solution;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
@@ -37,5 +38,23 @@ public class TestUtils {
         } else {
             fail("Lists not Equal!");
         }
+    }
+
+    public static TreeNode createTree(Integer... values) {
+        return buildSubTree(0, values);
+    }
+
+    private static TreeNode buildSubTree(int indexOfRoot, Integer[] values) {
+        if (indexOfRoot < 0 || values == null || values.length == 0 || indexOfRoot >= values.length || values[indexOfRoot] == null) {
+            return null;
+        }
+        TreeNode root = new TreeNode(values[indexOfRoot]);
+        root.left = buildSubTree(indexOfRoot * 2 + 1, values);
+        root.right = buildSubTree(indexOfRoot * 2 + 2, values);
+        return root;
+    }
+
+    public boolean areTreesEquals(TreeNode tree1, TreeNode tree2) {
+        return new Solution().isSameTree(tree1, tree2);
     }
 }
