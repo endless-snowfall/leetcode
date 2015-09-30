@@ -1,23 +1,23 @@
 # Problem:
-
+  
 # Clarifications:
   - 
-  
+
 # Approach:
   - 
-  
+
 # Runtime Analysis:
 ##Definitions:
   - 
-  
+
 ##Breakdown:
   - 
-        
-##Overall:
-  - Space:
-  - Time:
 
-# Tags:
+##Overall:
+  - Space: 
+  - Time: 
+
+# Tags: 
 
 # Notes:
   - 
