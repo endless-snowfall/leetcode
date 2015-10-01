@@ -42,7 +42,7 @@
   - Space: O(d) as the max call stack is bounded by the depth.
   - Time: O(n) as each node is called once using the helper method.
 
-# Tags: Tree, Binary Tree
+# Tags: Trees, Binary Tree
 
 # Notes:
   - 

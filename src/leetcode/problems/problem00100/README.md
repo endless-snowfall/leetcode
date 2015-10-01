@@ -26,7 +26,7 @@
     - Worst: O(n) the trees are the same.
     - Average: O(d) the lowest depth of difference.
 
-# Tags: Trees, Recursion, Binary Tree 
+# Tags: Trees, Recursion, Binary Tree
 
 # Notes:
   - 
