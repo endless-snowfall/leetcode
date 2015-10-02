@@ -34,4 +34,5 @@
 # Tags: Trees, BST, Binary Search Tree, Design, Iterator
 
 # Notes:
-  - 
+  - Some trickiness regarding how bonds should be broken when using the stack so we avoid infinite loops and actually terminate/make progress.
+  - The logic surrounding the possible right child is somewhat "dangling logic".
