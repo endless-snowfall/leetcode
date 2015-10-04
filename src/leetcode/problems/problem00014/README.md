@@ -25,7 +25,7 @@
   - Worst: O(n x m): All strings are the same length and the same string.
   - Average: O(p x n) characters to process until we stop.
 
-# Tags: Strings, Arrays, More Planning
+# Tags: Easy, Strings, Arrays, More Planning
 
 # Notes:
   - 

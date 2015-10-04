@@ -24,7 +24,7 @@
   - Space: O(m)
   - Time: O(n)
 
-## Tags: Strings, Tricky, Linear
+## Tags: Medium, Strings, Tricky, Linear
 
 ## Notes:
   - Tricky detail when using the map is that we don't want to consider a "last seen" index if it's earlier than our current "start" index.

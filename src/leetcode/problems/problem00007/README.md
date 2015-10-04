@@ -27,7 +27,7 @@
   - Space: O(n) to store digits of the new integer, or O(1) for a single integer.
   - Time: O(n) to process each digit of the input once.
 
-# Tags: Integers, Linear, Integer Boundaries, Assumptions
+# Tags: Easy, Integers, Linear, Integer Boundaries, Assumptions
 
 # Notes:
   - Assumption turned out to be wrong, LeetCode was expecting 0 where MIN/MAX Integer boundaries were crossed.

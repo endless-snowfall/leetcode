@@ -33,7 +33,7 @@
   - Space: O(1) for current longest palindrome
   - Time: O(2nmp)
 
-## Tags: Strings, Tricky, Palindrome, Quadratic
+## Tags: Medium, Strings, Tricky, Palindrome, Quadratic
 
 ## Notes:
   - First attempt times out on LeetCode

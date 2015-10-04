@@ -34,7 +34,7 @@
   - Space: None.
   - Time: O(n).
 
-# Tags: Arrays, Linear
+# Tags: Easy, Arrays, Linear
 
 # Notes:
   - 

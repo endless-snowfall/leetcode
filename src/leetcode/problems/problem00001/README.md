@@ -23,7 +23,7 @@
   - Space O(n)
   - Time O(n)
 
-# Tags: Arrays, Sorting, Linear
+# Tags: Medium, Arrays, Sorting, Linear
 
 # Notes:
   - Index in order implies sorting input array.

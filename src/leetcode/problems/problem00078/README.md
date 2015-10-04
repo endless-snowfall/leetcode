@@ -47,7 +47,7 @@
   - Space: O(2^n)
   - Time: O(n log n)
 
-# Tags: Sets, Recursion, Sorting, Linearithmic
+# Tags: Medium, Sets, Recursion, Sorting, Linearithmic
 
 # Notes:
   - 

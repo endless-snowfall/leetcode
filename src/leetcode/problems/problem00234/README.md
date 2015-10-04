@@ -23,7 +23,7 @@
   - Space: O(1) as we are not creating any new ListNode's.
   - Time: O(n) as we only do two linear passes of the list.
 
-# Tags: Linked List, Palindrome, Linear
+# Tags: Easy, Linked List, Palindrome, Linear
 
 # Notes:
   - Be careful of what you're comparing in the end because the "remainder" of your original list must have the correct pointer to the start of the remainder.

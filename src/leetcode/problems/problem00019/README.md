@@ -35,7 +35,7 @@
   - Space: None used.
   - Time: O(x).
 
-# Tags: Linked List, Remove, Removal, Linear
+# Tags: Easy, Linked List, Remove, Removal, Linear
 
 # Notes:
   - 

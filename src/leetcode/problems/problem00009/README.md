@@ -46,7 +46,7 @@
   - Space: O(1)
   - Time: O(n)
 
-# Tags: Palindrome, Integers, Linear, Assumptions, Divide by Zero, Disappearing Zeroes, Tricky, Unfinished
+# Tags: Easy, Palindrome, Integers, Linear, Assumptions, Divide by Zero, Disappearing Zeroes, Tricky, Unfinished
 
 # Notes:
   - Solution (2) suffered from Divide by Zero with encapsulated zeroes.

@@ -21,7 +21,7 @@
   - Space: O(log d) for recursive call stack.
   - Time: O(log d) for calculating max depth of tree.
 
-# Tags: Trees, Binary Tree, Logarithmic
+# Tags: Easy, Trees, Binary Tree, Logarithmic
 
 # Notes:
   - 

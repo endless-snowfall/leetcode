@@ -30,7 +30,7 @@
   - top: O(1)
   - empty: O(1)
 
-# Tags: Stacks, Queues, Design
+# Tags: Easy, Stacks, Queues, Design
 
 # Notes:
   - 

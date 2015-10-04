@@ -31,7 +31,7 @@
   - hasNext(): O(1) as the next is always pre-computed.
   - next(): O(d) because we need to find the subsequent next.
 
-# Tags: Trees, BST, Binary Search Tree, Design, Iterator
+# Tags: Easy, Medium, Trees, BST, Binary Search Tree, Design, Iterator
 
 # Notes:
   - Some trickiness regarding how bonds should be broken when using the stack so we avoid infinite loops and actually terminate/make progress.

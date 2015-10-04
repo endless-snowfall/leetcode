@@ -32,7 +32,7 @@
     - Worst O(n), if we need to migrate everything from the "enqueue" stack to the "dequeue" stack.
   - empty: Always O(1).
 
-# Tags: Stacks, Queues, Design
+# Tags: Easy, Stacks, Queues, Design
 
 # Notes:
   - 

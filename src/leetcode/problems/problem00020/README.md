@@ -27,7 +27,7 @@ The brackets must close in the correct order, "()" and "()[]{}" are all valid bu
   - Space: O(n) to store all opening brackets, which can be the entire string.
   - Time: O(n) since we go through the string once.
 
-# Tags: Strings, Stack, Linear
+# Tags: Easy, Strings, Stack, Linear
 
 # Notes:
   - Need to ensure the stack is empty at the end.

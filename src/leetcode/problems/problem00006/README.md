@@ -42,7 +42,7 @@
   - Space: O(n) + O(n) = O(n)
   - Time: O(n) + O(n) = O(n)
 
-## Tags: Strings, Input Validation, Linear
+## Tags: Easy, Strings, Input Validation, Linear
 
 ## Notes:
   - There are many edge cases concerning the length of the input, and the provided numRows which should lead to either:

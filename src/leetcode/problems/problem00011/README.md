@@ -68,7 +68,7 @@
   - Space: O(1)
   - Time: O(n)
 
-# Tags: Arrays, Tricky, Reworked, Bad Assumptions, Incorrect, Inward Prune, Linear
+# Tags: Medium, Arrays, Tricky, Reworked, Bad Assumptions, Incorrect, Inward Prune, Linear
 
 # Notes:
   - Solution(1) and Solution(2) time out.

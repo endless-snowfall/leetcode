@@ -25,7 +25,7 @@
   - Space: Need to augment each element with the minimum.
   - Time: O(1) for ever operation.
 
-# Tags: Stacks, Constant Time
+# Tags: Easy, Stacks, Constant Time
 
 # Notes:
   - 

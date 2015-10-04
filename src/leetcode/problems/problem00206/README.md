@@ -18,7 +18,7 @@
   - Space: O(n) to build the reversed list although we will be reusing ListNode's.
   - Time: O(n) to process the input list once.
 
-# Tags: Linked List, Linear
+# Tags: Easy, Linked List, Linear
 
 # Notes:
   - Careful to sever the link after deciding the new head.  Need to run through a few examples to test the algorithm!

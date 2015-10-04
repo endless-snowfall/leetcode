@@ -29,7 +29,7 @@
       - Space: O(e) for recursive call stack. 
       - Time: O(e)
 
-# Tags: Binary Tree, Trees, Assumptions, Logarithmic
+# Tags: Easy, Binary Tree, Trees, Assumptions, Logarithmic
 
 # Notes:
   - 

@@ -23,7 +23,7 @@
   - Space: O(m + n) as we need to combine the lists, keep in mind we are not creating any new ListNode's.
   - Time: O(m + n) as we traverse each list only once.
 
-# Tags: Linked List, Linear
+# Tags: Easy, Linked List, Linear
 
 # Notes:
   - 

@@ -40,7 +40,7 @@
   - Space: O(1) as no new ListNode's will be created.
   - Time: O(n)
 
-# Tags: Linked List, Linear, Reversed Indices, NullPointerException
+# Tags: Medium, Linked List, Linear, Reversed Indices, NullPointerException
 
 # Notes:
   - Troubleshooting revealed mixing up indices while subtracting a difference.

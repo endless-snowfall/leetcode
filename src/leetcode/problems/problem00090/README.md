@@ -38,7 +38,7 @@
   - Space: O(2^d).
   - Time: O(n log n).
 
-# Tags: Sets, Recursion, Sorting, Linearithmic
+# Tags: Medium, Sets, Recursion, Sorting, Linearithmic
 
 # Notes:
   - Getting the exact ordering that LeetCode wants is totally brutal.

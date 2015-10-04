@@ -32,7 +32,7 @@ Overall  - Space: There will be exactly x lists returned and each list will be o
   - Space: O(n) as all nodes must be visited once.
   - Time: O(d) for recursive call stack.
 
-# Tags: Trees, Binary Tree
+# Tags: Easy, Trees, Binary Tree
 
 # Notes:
   - Learned that Arrays.asList is immutable!
