@@ -67,7 +67,8 @@ public class TestUtils {
     }
 
     public static <T> void assertListsEqualUnordered(List<T> list1, List<T> list2) {
-        assertTrue(list1.size() == list2.size());
+        assertTrue(String.format("Lists [%s] and [%s] are not the same size!", list1, list2),
+            list1.size() == list2.size());
         assertFalse("Lists are not equal (unordered)!",
             list1.stream()
                 .filter(i -> !list2.contains(i))
