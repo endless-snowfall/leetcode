@@ -40,13 +40,14 @@
 ##Breakdown:
   - There will be n recursive calls.
   - There will be O(2^n) space used as that's required to create all subsets.
+  - We are sorting the array so that will cost O(n log n).
   - The array is traversed once as there is one recursive call made for each array element.
   
 ##Overall:
   - Space: O(2^n)
-  - Time: O(n)
+  - Time: O(n log n)
 
-# Tags: Sets, Linear, Recursion
+# Tags: Sets, Recursion, Sorting, Linearithmic
 
 # Notes:
   - 
