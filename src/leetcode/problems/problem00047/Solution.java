@@ -1,6 +1,7 @@
 package leetcode.problems.problem00047;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
@@ -12,32 +13,36 @@ public class Solution {
             return result;
         }
 
-        result = helper(nums, 0);
+        Arrays.sort(nums);
+        helper(nums, result, new ArrayList<>(), new boolean[nums.length], 0);
         return result;
     }
 
-    private List<List<Integer>> helper(int[] nums, int pivotIndex) {
-        if (pivotIndex == nums.length - 1) {
-            List<Integer> newList = new ArrayList<>();
-            newList.add(nums[pivotIndex]);
-            List<List<Integer>> result = new ArrayList<>();
-            result.add(newList);
-            return result;
+    private void helper(int[] nums, List<List<Integer>> result, List<Integer> permutation, boolean[] used, int numUsed) {
+        // Approach is to build permutations from an empty list, so when we
+        // reach the same length as the input, we've generated a new
+        // permutation.
+        if (numUsed == nums.length) {
+            result.add(new ArrayList<>(permutation));
+            return;
         }
 
-        List<List<Integer>> intermediateResults = helper(nums, pivotIndex + 1);
-        List<List<Integer>> newResult = new ArrayList<>();
-
-        for (List<Integer> intermediateResult : intermediateResults) {
-            for (int i = 0; i <= intermediateResult.size(); i++) {
-                List<Integer> copy = new ArrayList<>(intermediateResult);
-                copy.add(i, nums[pivotIndex]);
-                if (!newResult.contains(copy)) {
-                    newResult.add(copy);
-                }
+        for (int i = 0; i < nums.length; i++) {
+            // Skip elements that have been used OR
+            // Duplicate numbers where the duplicates have not been used
+            if (used[i] || (i > 0 && nums[i] == nums[i - 1] && !used[i - 1])) {
+                continue;
             }
-        }
 
-        return newResult;
+            used[i] = true;
+            permutation.add(nums[i]);
+
+            // Each time we recurse we redo the for loop above but only process
+            // unused elements
+            helper(nums, result, permutation, used, numUsed + 1);
+
+            used[i] = false;
+            permutation.remove(permutation.size() - 1);
+        }
     }
 }

@@ -70,4 +70,9 @@ public class SolutionTest extends TestBase {
             Lists.newArrayList(2, 1, 1)),
             solution.permuteUnique(new int[] { 1, 1, 2 }));
     }
+
+    @Test
+    public void test7() {
+        solution.permuteUnique(new int[] { 1, 1, 0, 0, 1, -1, -1, 1 });
+    }
 }
