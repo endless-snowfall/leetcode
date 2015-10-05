@@ -22,7 +22,7 @@
   - NOTE: 
     - We avoid duplicates by leveraging the sorted input and the "used" array.
     - Since the array is sorted, the first unique element that we process will be used in the permutation.
-    - However, subsequent ones will only be used after we know the one before it has already been applied.
+    - However, subsequent ones will only be used after we know the one before it has already been applied, thereby avoiding duplicate permutation prefixes.
 
 # Runtime Analysis:
 ##Definitions:
@@ -37,4 +37,4 @@
 
 # Notes:
   - Code and approach are very non-intuitive.
-  - Wraps recursive calls inside a loop but leverages a boolean array to control the iterations.
+  - Wraps recursive calls inside a loop but leverages a boolean array to control the iterations and avoid duplicate permutation prefixes.
