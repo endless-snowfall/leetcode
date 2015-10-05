@@ -34,7 +34,7 @@
   - Space: None.
   - Time: O(a+b+c);
 
-# Tags: Easy, Numbers, Prime Numbers, Factorization, Linear
+# Tags: Easy, Numbers, Prime Numbers, Factorization, Linear, Condensed
 
 # Notes:
   - 
