@@ -2,7 +2,7 @@ package leetcode.problems.problem00263;
 
 import java.util.Arrays;
 
-public class CondensedSolution {
+public class BetterSolution {
 
     public boolean isUgly(int num) {
         if (num < 1) {
