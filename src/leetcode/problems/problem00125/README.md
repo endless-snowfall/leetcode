@@ -39,7 +39,7 @@
   - Space: O(m/2)
   - Time: O(n)
 
-# Tags: Easy, Strings, Palindrome, Linear, Stacks, Missing Clarification
+# Tags: Easy, Strings, Palindrome, Linear, Stacks, Missing Clarification, Better Solution
 
 # Notes:
   - Asking if the casing matters is important!
