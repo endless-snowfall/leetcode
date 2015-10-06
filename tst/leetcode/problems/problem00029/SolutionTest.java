@@ -9,11 +9,11 @@ import leetcode.problems.common.TestBase;
 
 public class SolutionTest extends TestBase {
 
-    private Solution solution;
+    private FasterSolution solution;
 
     @Before
     public void before() {
-        solution = new Solution();
+        solution = new FasterSolution();
     }
 
     @Test
@@ -74,5 +74,15 @@ public class SolutionTest extends TestBase {
     @Test
     public void test12() {
         assertEquals(0, solution.divide(1, 2));
+    }
+
+    @Test
+    public void test13() {
+        assertEquals(1073741823, solution.divide(Integer.MAX_VALUE, 2));
+    }
+
+    @Test
+    public void test14() {
+        assertEquals(1073741824, solution.divide(Integer.MIN_VALUE, -2));
     }
 }
