@@ -9,6 +9,8 @@ import com.google.common.base.Stopwatch;
 
 public class TestTimeWatcher extends TestWatcher {
 
+    private static final double NS_IN_MS = 1000000;
+
     private Stopwatch stopwatch = Stopwatch.createUnstarted();
 
     @Override
@@ -20,9 +22,9 @@ public class TestTimeWatcher extends TestWatcher {
     protected void finished(Description description) {
         stopwatch.stop();
 
-        System.out.println(String.format("Test %s:%s took %d ms.",
-                description.getClassName(),
-                description.getMethodName(),
-                stopwatch.elapsed(TimeUnit.MILLISECONDS)));
+        System.out.println(String.format("Test %s:%s took %s ms.",
+            description.getClassName(),
+            description.getMethodName(),
+            stopwatch.elapsed(TimeUnit.NANOSECONDS) / NS_IN_MS));
     }
 };

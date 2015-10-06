@@ -57,7 +57,6 @@ public class SolutionTest extends TestBase {
     public void test6() {
         int[] input = new int[] { 0, 1, 0, 3, 12 };
         solution.moveZeroes(input);
-        System.out.println(Arrays.toString(input));
         assertTrue(Arrays.equals(new int[] { 1, 3, 12, 0, 0 }, input));
     }
 }
