@@ -50,9 +50,9 @@ public class Solution {
         return builder.toString();
     }
 
-    private String convertListToPath2(List<TreeNode> paths) {
-        return paths.stream()
-            .map(node -> node.val.toString())
-            .collect(Collectors.joining("->"));
-    }
+    // private String convertListToPath2(List<TreeNode> paths) {
+    // return paths.stream()
+    // .map(node -> node.val.toString())
+    // .collect(Collectors.joining("->"));
+    // }
 }
