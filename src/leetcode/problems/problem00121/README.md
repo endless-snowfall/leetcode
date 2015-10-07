@@ -34,7 +34,7 @@
   - Space: Constant.
   - Time: O(n)
 
-# Tags: Medium, Arrays, Tricky, Linear, Review
+# Tags: Medium, Arrays, Tricky, Linear, Review, Concise Solution
 
 # Notes:
   - Having to do duplicate logic on separate triggers: (1) Encountering a new min, and (2) Arriving at the end of the array, requires strange re-ordering of the conditional clauses in the loop.
