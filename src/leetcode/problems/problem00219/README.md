@@ -32,4 +32,4 @@
 # Tags: Easy, Arrays, Timed Out, Better Solution, Reworked
 
 # Notes:
-  - 
+  - If the window is the size of the entire list then we have a problem.  We are essentially doing 1 + 2 + 3 + 4 + ... + n checks, which is O(n^2).
