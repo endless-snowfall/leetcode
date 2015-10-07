@@ -9,14 +9,24 @@ public class Solution {
 
         int result = 0;
         int min = prices[0];
+        int max = prices[0];
 
         for (int i = 1; i < prices.length; i++) {
+            int candidatePrice = 0;
             int currentPrice = prices[i];
 
-            result = Math.max(result, currentPrice - min);
+            if (currentPrice > max) {
+                max = currentPrice;
+            }
 
-            if (currentPrice < min) {
+            if (currentPrice < min || i == prices.length - 1) {
+                candidatePrice = max - min;
                 min = currentPrice;
+                max = currentPrice;
+            }
+
+            if (candidatePrice > result) {
+                result = candidatePrice;
             }
         }
 
