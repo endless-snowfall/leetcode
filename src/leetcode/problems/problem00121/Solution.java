@@ -20,7 +20,7 @@ public class Solution {
 
             if (currentPrice < min || i == prices.length - 1) {
                 int candidatePrice = max - min;
-                result = (candidatePrice > result) ? candidatePrice : result;
+                result = Math.max(result, candidatePrice);
                 min = currentPrice;
                 max = currentPrice;
             }
