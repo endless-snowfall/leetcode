@@ -25,11 +25,17 @@
   - For each element we process we need to check O(k) elements for containment.
   - Overall time is O(nk).
 
-##Overall:
-  - Space: 
-  - Time: 
+# Approach (2):
+  - Same as (1) but use a HashSet to hold the window instead of a list.
+  - Yields O(1) lookup instead of O(k).  We know that those number should be unique so order is not necessary.
 
-# Tags: Easy, Arrays, Timed Out, Better Solution, Reworked
+##Overall:
+  - Space: O(k)
+  - Time: O(n)
+
+# Tags: Easy, Arrays, Timed Out, Better Solution, Reworked, Linear, Bad Assumption
 
 # Notes:
   - If the window is the size of the entire list then we have a problem.  We are essentially doing 1 + 2 + 3 + 4 + ... + n checks, which is O(n^2).
+  - Bad looping conditions mixing up i and k.
+  - Made a bad assumption for input of k=0.

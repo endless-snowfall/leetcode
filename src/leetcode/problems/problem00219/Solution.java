@@ -1,7 +1,7 @@
 package leetcode.problems.problem00219;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Solution {
 
@@ -9,11 +9,11 @@ public class Solution {
         if (nums == null || nums.length == 0) {
             return false;
         } else if (k == 0) {
-            return true;
+            return false;
         }
 
-        List<Integer> window = new ArrayList<>();
-        for (int i = 0; i < k && k < nums.length; i++) {
+        Set<Integer> window = new HashSet<>();
+        for (int i = 0; i < k && i < nums.length; i++) {
             if (window.contains(nums[i])) {
                 return true;
             }
@@ -24,7 +24,7 @@ public class Solution {
             if (window.contains(nums[i])) {
                 return true;
             }
-            window.remove(0);
+            window.remove(nums[i - k]);
             window.add(nums[i]);
         }
 
