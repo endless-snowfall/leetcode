@@ -25,7 +25,7 @@
   - Space: O(Max(m, n)) since the result will have at least as many digits as the longer string.
   - Time: O(Max(m, n)) since we have to finish processing both strings.
 
-# Tags: Easy, Binary, Strings, Gotcha, Linear
+# Tags: Easy, Binary, Strings, Gotcha, Linear, Concise Solution
 
 # Notes:
   - Gotcha for missing scenarios and improper resetting of the carry flag.
