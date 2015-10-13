@@ -13,11 +13,18 @@
   - Can the length of nums2 be greater than n? -> Assume yes.
 
 # Approach:
+## Mine:
   - Shift the m elements of nums1 to the right by n positions.
   - Keep track of a read index for both the m elements of num1 (after shifting) and the n elements of nums2.
   - For every position of the result, which will have m + n elements, we want to determine the smaller one.
   - Once we've done that, we want to advance the corresponding source's read index.
   - Once we've finished processing a source array, it's index will go out of valid bounds, we need to trap this situation and use Integer.MAX_VALUE as a default value.
+
+## Concise Solution:
+  - Rather than sorting from the head of the arrays and having to worry about shifting existing values in nums1 down or overwriting them, this approach sorts from the tail of the two arrays.
+  - The first loop runs so long as neither of the array sources are done process.
+  - Then there are two conditional blocks below to drain out one or the other.
+  - Logically it's much more clean and straight forward, also removes the need to do shifting and worry about default values.
 
 # Runtime Analysis:
 ##Definitions:
@@ -31,7 +38,7 @@
   - Space: Constant
   - Time: O(2m + n).
 
-# Tags: Easy, Arrays, Merge, Gotcha, Review, ArrayOutOfBoundsException, Linear, Shifting
+# Tags: Easy, Arrays, Merge, Gotcha, Review, ArrayOutOfBoundsException, Linear, Shifting, Concise Solution
 
 # Notes:
   - Crazy number of gotcha's.
