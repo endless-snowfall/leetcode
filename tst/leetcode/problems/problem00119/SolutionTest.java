@@ -9,7 +9,6 @@ import org.junit.Test;
 
 import leetcode.problems.common.TestBase;
 
-@SuppressWarnings("unchecked")
 public class SolutionTest extends TestBase {
 
     private Solution solution;
