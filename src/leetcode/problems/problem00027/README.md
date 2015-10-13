@@ -36,7 +36,7 @@
   - Space: Constant
   - Time: O(n)
 
-# Tags: Easy, Arrays, Removal, Gotcha
+# Tags: Easy, Arrays, Removal, Gotcha, Linear
 
 # Notes:
   - I was returning a one-off result when the condition on the while loop was [left < right] then I made it <=.
