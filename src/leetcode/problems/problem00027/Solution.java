@@ -10,7 +10,6 @@ public class Solution {
         int left = 0;
         int right = nums.length - 1;
 
-        // Gotcha
         while (left <= right) {
             if (nums[left] != val) {
                 left++;
