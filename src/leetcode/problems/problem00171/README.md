@@ -23,7 +23,7 @@
   - Keep track of the result, which we will add to as we go along.
   - Similar to rebuilding a base 10 number:
     - (1) We'll go through the digits from right to left.
-    - (2) Extract the digit according to the base.
+    - (2) Extract the digit according to the base, we'll need to subtract 65 from it and add 1 to map A -> 1.
     - (3) The digit needs to be multiplied by the corresponding power of the base before being attributed to the result.
 
 # Runtime Analysis:

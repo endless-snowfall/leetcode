@@ -43,7 +43,7 @@
   - Space: 
   - Time: 
 
-# Tags: Easy, Concise Solution, Numbers, Strings, Mod, Tricky, Unknown Runtime
+# Tags: Easy, Concise Solution, Numbers, Strings, Mod, Tricky, Unknown Runtime, Base Conversion
 
 # Notes:
   - 
