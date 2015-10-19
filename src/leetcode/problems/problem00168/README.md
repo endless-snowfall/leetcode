@@ -19,7 +19,7 @@
 # Approach:
 
 ## Approach (1):
-  - 
+  - No freaking idea what Iw as doing.
   
 ## Approach (2): [Concise]
   - Understand that we are trying to convert a base 10 number to base 26 using the alphabet.
@@ -30,6 +30,7 @@
     - Finds the remainder after taking the mod by 26.
     - Subtract the remainder from the number and divide it by the base of 26 to move on to the next digit.
   - Now that we have the digits in reverse, we reverse it and return the result.
+  - This algorithm is very similar to how you would strip off the digits from the right in base 10.
 
 # Runtime Analysis:
 ##Definitions:
