@@ -19,19 +19,26 @@
   - Be careful that this write index can go out of bounds and should be modded.
   - Note that the read index will not go out of bounds.
 
-## Approach (2): [In Progress]
-  - Still working out how to do everything in-place with constant memory.
-  - Am stuck on forward propagation approach where we end up on an index that we have already processed and end up repeating.
+## Approach (2): [Better]
+  - Guard against the edge cases.
+  - Use the Euclidean method to calculate the GCD of the length of the array and k.
+  - Use the GCD to calculate the LCM.
+    - LCM = (length * k) / GCD
+  - We know that the LCM / k is the number of times we can swap an element of the array forward until we arrive where we started.
+  - If we were to continue we would be overwriting our previous entries so we need to "shift" one position over and repeat.
+  - The number of times we need to "shift over" is n / (LCM / k) times.
+  - Use two loops, bounding the first one by n / (LCM / k), and the second one by LCM / k.
   
 # Runtime Analysis:
 ##Definitions:
   - n is the size of the array.
 
 ##Overall:
-  - Space: O(n).
+  - Space: Constant.
   - Time: O(n).
 
-# Tags: Easy, Arrays, Linear, Mod, Unfinished
+# Tags: Easy, Arrays, Linear, Mod, Better Solution, GCD, LCM, Euclidean Method, Math
 
 # Notes:
   - Learned that Java mod is weird in that negative values in from of the mod operator result in a negative answer.
+  - Learned about the Euclidean method of calculating the GCD.
