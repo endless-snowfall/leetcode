@@ -28,14 +28,14 @@ public class TestUtils {
         return result;
     }
 
-    public static void assertListNodesEqual(ListNode list1, ListNode list2) {
-        if (list1 == null && list2 == null) {
+    public static void assertListNodesEqual(ListNode expectd, ListNode actual) {
+        if (expectd == null && actual == null) {
             return;
-        } else if (list1 != null && list2 != null) {
-            if (list1.val != list2.val) {
+        } else if (expectd != null && actual != null) {
+            if (expectd.val != actual.val) {
                 fail("Lists not equal!");
             } else {
-                assertListNodesEqual(list1.next, list2.next);
+                assertListNodesEqual(expectd.next, actual.next);
             }
         } else {
             fail("Lists not equal!");
@@ -56,22 +56,22 @@ public class TestUtils {
         return root;
     }
 
-    public static boolean areTreesEquals(TreeNode tree1, TreeNode tree2) {
-        return new Solution().isSameTree(tree1, tree2);
+    public static boolean areTreesEquals(TreeNode expected, TreeNode actual) {
+        return new Solution().isSameTree(expected, actual);
     }
 
-    public static void assertTreesEquals(TreeNode tree1, TreeNode tree2) {
-        if (!areTreesEquals(tree1, tree2)) {
+    public static void assertTreesEquals(TreeNode expected, TreeNode actual) {
+        if (!areTreesEquals(expected, actual)) {
             fail("Trees not equal!");
         }
     }
 
-    public static <T> void assertListsEqualUnordered(List<T> list1, List<T> list2) {
-        assertTrue(String.format("Lists [%s] and [%s] are not the same size!", list1, list2),
-            list1.size() == list2.size());
-        assertFalse(String.format("Lists are not equal (unordered)! List1=[%s], List2=[%s]", list1, list2),
-            list1.stream()
-                .filter(i -> !list2.contains(i))
+    public static <T> void assertListsEqualUnordered(List<T> expected, List<T> actual) {
+        assertTrue(String.format("Lists expected=[%s] and actual=[%s] are not the same size!", expected, actual),
+            expected.size() == actual.size());
+        assertFalse(String.format("Lists are not equal (unordered)! List1=[%s], List2=[%s]", expected, actual),
+            expected.stream()
+                .filter(i -> !actual.contains(i))
                 .findAny()
                 .isPresent());
     }
