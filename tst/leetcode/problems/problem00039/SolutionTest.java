@@ -1,6 +1,6 @@
 package leetcode.problems.problem00039;
 
-import static org.junit.Assert.*;
+import static leetcode.problems.common.TestUtils.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,26 +16,26 @@ import leetcode.problems.common.TestBase;
 @SuppressWarnings("unchecked")
 public class SolutionTest extends TestBase {
 
-    private ConciseSolution solution;
+    private BestestSolution solution;
 
     @Before
     public void before() {
-        solution = new ConciseSolution();
+        solution = new BestestSolution();
     }
 
     @Test
     public void test1() {
-        assertEquals(Collections.EMPTY_LIST, solution.combinationSum(null, 1));
+        assertListsEqualUnordered(Collections.EMPTY_LIST, solution.combinationSum(null, 1));
     }
 
     @Test
     public void test2() {
-        assertEquals(Collections.EMPTY_LIST, solution.combinationSum(new int[] {}, 1));
+        assertListsEqualUnordered(Collections.EMPTY_LIST, solution.combinationSum(new int[] {}, 1));
     }
 
     @Test
     public void test3() {
-        assertEquals(Collections.EMPTY_LIST, solution.combinationSum(new int[] { 2 }, 1));
+        assertListsEqualUnordered(Collections.EMPTY_LIST, solution.combinationSum(new int[] { 2 }, 1));
     }
 
     @Test
@@ -43,7 +43,7 @@ public class SolutionTest extends TestBase {
         List<List<Integer>> expected = new ArrayList<>();
         expected.add(Lists.newArrayList(1));
 
-        assertEquals(expected, solution.combinationSum(new int[] { 1 }, 1));
+        assertListsEqualUnordered(expected, solution.combinationSum(new int[] { 1 }, 1));
     }
 
     @Test
@@ -51,7 +51,7 @@ public class SolutionTest extends TestBase {
         List<List<Integer>> expected = new ArrayList<>();
         expected.add(Lists.newArrayList(1));
 
-        assertEquals(expected, solution.combinationSum(new int[] { 1, 2 }, 1));
+        assertListsEqualUnordered(expected, solution.combinationSum(new int[] { 1, 2 }, 1));
     }
 
     @Test
@@ -59,12 +59,12 @@ public class SolutionTest extends TestBase {
         List<List<Integer>> expected = new ArrayList<>();
         expected.add(Lists.newArrayList(1));
 
-        assertEquals(expected, solution.combinationSum(new int[] { 1, 1, 1, 1, 1, 1 }, 1));
+        assertListsEqualUnordered(expected, solution.combinationSum(new int[] { 1, 1, 1, 1, 1, 1 }, 1));
     }
 
     @Test
     public void test7() {
-        assertEquals(Lists.newArrayList(
+        assertListsEqualUnordered(Lists.newArrayList(
             Lists.newArrayList(1, 1),
             Lists.newArrayList(2)),
             solution.combinationSum(new int[] { 1, 2 }, 2));
@@ -72,7 +72,7 @@ public class SolutionTest extends TestBase {
 
     @Test
     public void test8() {
-        assertEquals(Lists.newArrayList(
+        assertListsEqualUnordered(Lists.newArrayList(
             Lists.newArrayList(2, 2, 3),
             Lists.newArrayList(7)),
             solution.combinationSum(new int[] { 2, 3, 6, 7 }, 7));
@@ -80,7 +80,7 @@ public class SolutionTest extends TestBase {
 
     @Test
     public void test9() {
-        assertEquals(Lists.newArrayList(
+        assertListsEqualUnordered(Lists.newArrayList(
             Lists.newArrayList(2, 2, 3),
             Lists.newArrayList(7)),
             solution.combinationSum(new int[] { 2, 2, 2, 3, 3, 3, 3, 3, 6, 6, 6, 6, 7, 7 }, 7));
@@ -88,7 +88,7 @@ public class SolutionTest extends TestBase {
 
     @Test
     public void test10() {
-        assertEquals(Lists.newArrayList(
+        assertListsEqualUnordered(Lists.newArrayList(
             Lists.newArrayList(3, 4, 4),
             Lists.newArrayList(3, 8),
             Lists.newArrayList(4, 7)),

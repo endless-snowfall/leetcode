@@ -42,6 +42,9 @@
   - We will use a LinkedList for the candidate so adds and removes are O(1).
   - Be careful to make a copy of the candidate/builder list when adding results since the actual candidate will always be empty when the program terminates.
 
+## Approach (3): [Bestest]
+  - Allowing the multiplier to be zero actually removes the need for the outer for loop.
+
 # Runtime Analysis:
 ##Definitions:
   - n is the number of entries in the array.
@@ -54,7 +57,7 @@
   - Space: Unknown
   - Time: Unknown Runtime
 
-# Tags: Medium, Lists, Recursion, Numbers, Unknown Runtime, Concise Solution, WaxOnWaxOff, Gotcha, Linked Lists
+# Tags: Medium, Lists, Recursion, Numbers, Unknown Runtime, Concise Solution, WaxOnWaxOff, Gotcha, Linked Lists, Bestest Solution
 
 # Notes:
   - 
