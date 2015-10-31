@@ -11,11 +11,11 @@ import leetcode.problems.common.TestBase;
 
 public class SolutionTest extends TestBase {
 
-    private Solution solution;
+    private ConciseSolution solution;
 
     @Before
     public void before() {
-        solution = new Solution();
+        solution = new ConciseSolution();
     }
 
     @Test

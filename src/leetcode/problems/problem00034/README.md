@@ -47,7 +47,7 @@
   - Space: Constant
   - Time: O(log n)
 
-# Tags: Medium, Arrays, Binary Search, Recursion, Gotcha, Logarithmic
+# Tags: Medium, Arrays, Binary Search, Recursion, Gotcha, Logarithmic, Concise Solution
 
 # Notes:
   - Got snagged on a bad termination case for binary search.  Was checking (start == end) but the fix was to make it (start > end).
