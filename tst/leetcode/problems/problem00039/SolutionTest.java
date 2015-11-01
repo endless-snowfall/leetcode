@@ -16,11 +16,11 @@ import leetcode.problems.common.TestBase;
 @SuppressWarnings("unchecked")
 public class SolutionTest extends TestBase {
 
-    private BestestSolution solution;
+    private ConciseSolution solution;
 
     @Before
     public void before() {
-        solution = new BestestSolution();
+        solution = new ConciseSolution();
     }
 
     @Test
