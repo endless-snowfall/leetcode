@@ -42,8 +42,11 @@
   - We will use a LinkedList for the candidate so adds and removes are O(1).
   - Be careful to make a copy of the candidate/builder list when adding results since the actual candidate will always be empty when the program terminates.
 
-## Approach (3): [Bestest]
+## Approach (3): [Conciser]
   - Allowing the multiplier to be zero actually removes the need for the outer for loop.
+  - But the concise solution does away with the concept of a multiplier altogether as we do a two-step recursion for the following:
+    - (1) Not use the element and leave the target unchanged, advancing the index.
+    - (2) Use the same element again, which is to decrease the target and recurse on the same index.
 
 # Runtime Analysis:
 ##Definitions:
@@ -57,7 +60,7 @@
   - Space: Unknown
   - Time: Unknown Runtime
 
-# Tags: Medium, Lists, Recursion, Numbers, Unknown Runtime, Concise Solution, WaxOnWaxOff, Gotcha, Linked Lists, Bestest Solution
+# Tags: Medium, Lists, Recursion, Numbers, Unknown Runtime, Concise Solution, WaxOnWaxOff, Gotcha, Linked Lists, Review, Scenario-based Recursion
 
 # Notes:
   - 
