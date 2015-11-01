@@ -13,7 +13,6 @@ public class Solution {
 
         if (n < 0) {
             nIsNegative = true;
-            n *= -1;
         }
 
         double result = helper(x, n);
@@ -26,14 +25,12 @@ public class Solution {
             return 0;
         } else if (n == 0) {
             return 1;
-        } else if (n == 1) {
-            return x;
         }
 
         int exponent = n / 2;
         int remainder = n % 2;
         double temp = helper(x, exponent);
 
-        return (temp * temp) * ((remainder == 1) ? x : 1);
+        return (temp * temp) * ((remainder == 1 || remainder == -1) ? x : 1);
     }
 }

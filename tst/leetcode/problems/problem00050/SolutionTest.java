@@ -10,16 +10,12 @@ import leetcode.problems.common.TestBase;
 public class SolutionTest extends TestBase {
 
     private static final double EPSILON = 0.00000001;
-    private Solution solution;
+
+    private ConciseSolution solution;
 
     @Before
     public void before() {
-        solution = new Solution();
-    }
-
-    @Test
-    public void test1() {
-        assertEquals(0, solution.myPow(0, 0), EPSILON);
+        solution = new ConciseSolution();
     }
 
     @Test
@@ -130,5 +126,15 @@ public class SolutionTest extends TestBase {
     @Test
     public void test23() {
         assertEquals(-32, solution.myPow(-2, 5), EPSILON);
+    }
+
+    @Test
+    public void test24() {
+        assertEquals(1, solution.myPow(1, Integer.MIN_VALUE), EPSILON);
+    }
+
+    @Test
+    public void blah() {
+        assertEquals(Integer.MIN_VALUE, Integer.MIN_VALUE * -1);
     }
 }
