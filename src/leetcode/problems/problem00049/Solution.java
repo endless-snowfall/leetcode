@@ -20,7 +20,7 @@ public class Solution {
         for (String str : strs) {
             char[] keyChars = str.toCharArray();
             Arrays.sort(keyChars);
-            String key = Arrays.toString(keyChars);
+            String key = String.valueOf(keyChars);
 
             map.computeIfAbsent(key, v -> new ArrayList<String>());
 
