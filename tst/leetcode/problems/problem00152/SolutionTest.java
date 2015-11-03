@@ -9,11 +9,11 @@ import leetcode.problems.common.TestBase;
 
 public class SolutionTest extends TestBase {
 
-    private Solution solution;
+    private BetterSolution solution;
 
     @Before
     public void before() {
-        solution = new Solution();
+        solution = new BetterSolution();
     }
 
     @Test
@@ -79,5 +79,15 @@ public class SolutionTest extends TestBase {
     @Test
     public void test13() {
         assertEquals(0, solution.maxProduct(new int[] { -2, 0, -1 }));
+    }
+
+    @Test
+    public void test14() {
+        assertEquals(4, solution.maxProduct(new int[] { 3, -1, 4 }));
+    }
+
+    @Test
+    public void test15() {
+        assertEquals(1, solution.maxProduct(new int[] { 0, -3, 1, 1 }));
     }
 }
