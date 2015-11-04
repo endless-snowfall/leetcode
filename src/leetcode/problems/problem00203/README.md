@@ -26,7 +26,7 @@
   - Space: No additional space is necessary as we modifying the input list.
   - Time: O(n) to process the input list once
 
-# Tags: Linked List, Assumptions, Linear
+# Tags: Easy, Linked List, Assumptions, Linear
 
 # Notes:
   - When looking for the "new head" it may not exist and the helper can return null.  We should guard against this in the downstream code.
