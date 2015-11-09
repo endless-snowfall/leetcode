@@ -8,10 +8,13 @@
   - Is a single-element list valid input? -> Assume yes and the result is a single node tree.
 
 # Approach:
-## Approach (1):
-
-## Approach (2): [Better]
-  - 
+  - Guard against the edge cases above.
+  - Want to define a recursive helper that:
+    - (1) Takes the start of a list and returns a TreeNode.
+    - (2) Finds the previous to the middle of the list using the fast pointer approach.
+    - (3) Builds a node from that middle value.
+    - (4) Disconnects the middle from the first half of the list, and recurses for the left child using the first half.
+    - (4) Disconnects the middle from the latter half of the list, and recurses for the right child using the latter half.
 
 # Runtime Analysis:
 ##Definitions:
