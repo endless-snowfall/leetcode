@@ -42,3 +42,5 @@
 
 # Notes:
   - Pretty brutal path to get a result that doesn't time out.
+  - Learned that for some sub methods, recursive code is far cleaner than iterative code.
+  - Also learned that 2^0 + 2^1 + 2^2 + ... 2^k = 2^(k + 1) - 1
