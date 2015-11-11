@@ -38,10 +38,10 @@
   - Time: O(m + n)
   
 ### Approach (2):
-  - Space: Constant
-  - Time: O(m + n)
+  - Space: O(m x n)
+  - Time: O(m x n)
 
-# Tags: Medium, BigInteger, Factorial, Math, Dynamic Programming
+# Tags: Medium, BigInteger, Factorial, Math, Dynamic Programming, Quadratic
 
 # Notes:
   - 12! is the largest that will fit in an integer.
