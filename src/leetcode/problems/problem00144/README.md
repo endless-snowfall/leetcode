@@ -29,7 +29,7 @@
   - Space: None
   - Time: O(n)
 
-# Tags: Medium, Trees, Binary Tree, Linear, Recursion, Unfinished
+# Tags: Medium, Trees, Binary Tree, Linear, Recursion, Unfinished, Recursive, Traversal
 
 # Notes:
   - TODO: Iterative follow-up

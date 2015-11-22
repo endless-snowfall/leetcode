@@ -33,8 +33,8 @@ public class SolutionTest extends TestBase {
 
     @Test
     public void test3() {
-        assertListsEqualUnordered(
-            Lists.newArrayList(1, 5, 7, 10, 11, 15, 17),
+        assertEquals(
+            Lists.newArrayList(10, 5, 1, 7, 15, 11, 17),
             solution.preorderTraversal(createTree(10, 5, 15, 1, 7, 11, 17, null, null, null, null, null, null, null, null)));
     }
 }
