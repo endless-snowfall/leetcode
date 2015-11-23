@@ -54,6 +54,9 @@
       - (c) Then we push the neighbor onto the stack.
     - (5) Once we are done processing all the neighbors for a node, we add that node to the "finished" set.
   
+## Approach (3): [Concise Iterative]
+  - Did away with the "finished" concept and instead, avoided putting more work on the stack if the neighbor was already previously created.
+  
 # Runtime Analysis:
 ##Definitions:
   - n is the number of nodes in the graph.
@@ -71,4 +74,5 @@
 # Notes:
   - [Recursive] Use of a Map to keep track of which nodes were "created" to avoid infinite recursion.
   - [Iterative] Use of the Set to keep track of which nodes were fully processed / completed for the same reason.
-  - TODO: Write a helper to create graphs and serialize as well, add more testing, 
+  - TODO: Write a helper to create graphs and serialize as well, add more testing.
+  - Learned that computeIfAbsent actually returns the value.
