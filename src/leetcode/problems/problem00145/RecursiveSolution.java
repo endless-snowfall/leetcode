@@ -5,7 +5,7 @@ import java.util.List;
 
 import leetcode.problems.common.TreeNode;
 
-public class Solution {
+public class RecursiveSolution {
 
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();

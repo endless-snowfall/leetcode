@@ -20,17 +20,21 @@
   - Is null input valid? -> Assume yes and the result is an empty list.
 
 # Approach:
+## Approach (1): [Recursive]
   - Basic recursive approach.
 
+## Approach (2): [Iterative]
+  - Breaking bonds.
+  
 # Runtime Analysis:
 ##Definitions:
   - n is the number of nodes in the tree.
 
-##Overall:
+##Recursive:
   - Space: None
   - Time: O(n)
 
-# Tags: Medium, Trees, Binary Trees, Recursion, Linear, Unfinished, Recursive, Traversal
+# Tags: Medium, Trees, Binary Trees, Recursion, Linear, Recursive, Traversal, Stacks, Iterative
 
 # Notes:
-  - TODO: Iterative follow-up
+  - Breaking bonds
