@@ -9,11 +9,11 @@ import leetcode.problems.common.TestBase;
 
 public class SolutionTest extends TestBase {
 
-    private RecursiveSolution solution;
+    private IterativeSolution solution;
 
     @Before
     public void before() {
-        solution = new RecursiveSolution();
+        solution = new IterativeSolution();
     }
 
     @Test

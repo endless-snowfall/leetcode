@@ -51,7 +51,6 @@ public class IterativeSolution {
     }
 
     private UndirectedGraphNode getClone(int label, Map<Integer, UndirectedGraphNode> createdNodes) {
-        createdNodes.computeIfAbsent(label, UndirectedGraphNode::new);
-        return createdNodes.get(label);
+        return createdNodes.computeIfAbsent(label, UndirectedGraphNode::new);
     }
 }
