@@ -28,17 +28,23 @@ public class TestUtils {
         return result;
     }
 
-    public static void assertListNodesEqual(ListNode expectd, ListNode actual) {
-        if (expectd == null && actual == null) {
-            return;
-        } else if (expectd != null && actual != null) {
-            if (expectd.val != actual.val) {
-                fail("Lists not equal!");
-            } else {
-                assertListNodesEqual(expectd.next, actual.next);
-            }
-        } else {
+    public static void assertListNodesEqual(ListNode expected, ListNode actual) {
+        if (!assertListNodesEqualHelper(expected, actual)) {
+            System.out.println(String.format("Lists not equal! expected=[%s], actual=[%s]", expected, actual));
             fail("Lists not equal!");
+        }
+    }
+
+    private static boolean assertListNodesEqualHelper(ListNode expected, ListNode actual) {
+        if (expected == null && actual == null) {
+            return true;
+        } else if (expected != null && actual != null) {
+            if (expected.val != actual.val) {
+                return false;
+            }
+            return assertListNodesEqualHelper(expected.next, actual.next);
+        } else {
+            return false;
         }
     }
 
