@@ -9,7 +9,12 @@ public class MergeSortSolution {
     }
 
     private int getLength(ListNode node) {
-        return (node == null) ? 0 : 1 + getLength(node.next);
+        int result = 0;
+        while (node != null) {
+            result++;
+            node = node.next;
+        }
+        return result;
     }
 
     private ListNode mergesort(ListNode node, int length) {
@@ -35,51 +40,34 @@ public class MergeSortSolution {
     }
 
     private ListNode merge(ListNode n1, ListNode n2) {
-        ListNode result = null;
-        ListNode resultTail = null;
+        ListNode result = new ListNode(0);
+        ListNode resultTail = result;
 
         while (n1 != null || n2 != null) {
             if (n1 == null) {
-                if (result == null) {
-                    return n2;
-                }
                 resultTail.next = n2;
+                resultTail = n2;
                 break;
             }
 
             if (n2 == null) {
-                if (result == null) {
-                    return n1;
-                }
                 resultTail.next = n1;
+                resultTail = n1;
                 break;
             }
 
             if (n1.val <= n2.val) {
-                if (result == null && resultTail == null) {
-                    result = n1;
-                } else {
-                    resultTail.next = n1;
-                }
-                resultTail = n1;
+                resultTail.next = n1;
                 n1 = n1.next;
-                resultTail.next = null;
-                continue;
+            } else {
+                resultTail.next = n2;
+                n2 = n2.next;
             }
 
-            if (n1.val > n2.val) {
-                if (result == null && resultTail == null) {
-                    result = n2;
-                } else {
-                    resultTail.next = n2;
-                }
-                resultTail = n2;
-                n2 = n2.next;
-                resultTail.next = null;
-                continue;
-            }
+            resultTail = resultTail.next;
+            resultTail.next = null;
         }
 
-        return result;
+        return result.next;
     }
 }
