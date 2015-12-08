@@ -6,7 +6,6 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import leetcode.problems.common.ListNode;
 import leetcode.problems.common.TestBase;
 
 public class SolutionTest extends TestBase {
