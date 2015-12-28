@@ -20,21 +20,21 @@ public class ConciseSolution {
             int bIndex = aIndex + 1;
             int cIndex = nums.length - 1;
 
-            if (nums[aIndex] > 0 || nums[cIndex] < 0) {
+            if (nums[cIndex] < 0) {
                 break;
             } else if (nums[aIndex] + nums[cIndex] == Integer.MIN_VALUE
                 || nums[aIndex] + nums[cIndex] == Integer.MAX_VALUE) {
                 break;
             }
 
-            while (bIndex < cIndex && cIndex > aIndex) {
-                int aPlusC = (nums[aIndex] + nums[cIndex]) * -1;
+            while (bIndex < cIndex) {
+                int target = (nums[aIndex] + nums[cIndex]) * -1;
 
-                if (nums[bIndex] == aPlusC) {
+                if (nums[bIndex] == target) {
                     result.add(Arrays.asList(nums[aIndex], nums[bIndex], nums[cIndex]));
                     bIndex = advance(nums, bIndex);
                     cIndex = retreat(nums, cIndex);
-                } else if (nums[bIndex] > aPlusC) {
+                } else if (nums[bIndex] > target) {
                     cIndex = retreat(nums, cIndex);
                 } else {
                     bIndex = advance(nums, bIndex);
