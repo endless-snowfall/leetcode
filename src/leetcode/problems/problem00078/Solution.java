@@ -21,7 +21,7 @@ public class Solution {
     }
 
     private List<List<Integer>> helper(int[] nums, int i, List<List<Integer>> result) {
-        if (i >= nums.length) {
+        if (i == nums.length) {
             result.add(new ArrayList<>());
             return result;
         }
