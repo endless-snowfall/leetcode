@@ -11,11 +11,11 @@ import com.google.common.collect.Lists;
 
 public class SolutionTest {
 
-    private Solution solution;
+    private HeapSolution solution;
 
     @Before
     public void before() {
-        solution = new Solution();
+        solution = new HeapSolution();
     }
 
     @Test
@@ -47,6 +47,35 @@ public class SolutionTest {
                 new int[] { 15, 10 },
                 new int[] { 20, 8 },
                 new int[] { 24, 0 }),
+            solution.getSkyline(input));
+    }
+
+    @Test
+    public void test4() {
+        int[][] input = {
+            { 0, 2, 3 },
+            { 2, 5, 3 }
+        };
+
+        assertListOfArraysEquals(
+            Lists.newArrayList(
+                new int[] { 0, 3 },
+                new int[] { 5, 0 }),
+            solution.getSkyline(input));
+    }
+
+    @Test
+    public void test5() {
+        int[][] input = {
+            { 1, 2, 1 },
+            { 1, 2, 2 },
+            { 1, 2, 3 }
+        };
+
+        assertListOfArraysEquals(
+            Lists.newArrayList(
+                new int[] { 1, 3 },
+                new int[] { 2, 0 }),
             solution.getSkyline(input));
     }
 

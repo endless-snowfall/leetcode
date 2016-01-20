@@ -3,7 +3,7 @@ package leetcode.problems.problem00218;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution {
+public class BruteForceSolution {
 
     public List<int[]> getSkyline(int[][] buildings) {
         List<int[]> result = new ArrayList<>();
