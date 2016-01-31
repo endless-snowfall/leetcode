@@ -7,11 +7,11 @@ import org.junit.Test;
 
 public class SolutionTest {
 
-    private Solution solution;
+    private ConciseSolution solution;
 
     @Before
     public void before() {
-        solution = new Solution();
+        solution = new ConciseSolution();
     }
 
     @Test
